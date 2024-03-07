@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let name = prompt("1. What is you name?");
+        alert('Hay, ' + name + "!");
+        let year = prompt("2. Which year are you born?");
+        const age = 2024 - year;
+        alert("Your age is " + age);
+        let length = prompt("3.Enter the length of the square:");
+        const perimeter = 4 * length
+        alert("Perimeter of the square is " + perimeter);
+        let radius = prompt(" 4.Enter the radius of the circle:");
+        const area = Math.floor(Math.PI * radius * * 2);
+        alert(" The area is approximately equal " + area);
+        let arr = [prompt("5. What is the distance in kilometrs between cities?"), prompt("5.How many hours do you want to get there?")];
+        const speed = arr[0] / arr[1];
+        alert("The speed at which you need to go: " + speed + " kilometers per hour");
+        let dollar = prompt("6.Your dollars:");
+        const euro = 1.09 * dollar;
+        alert("Your euro: " + euro);
+        let memory = prompt("7. Enter the amount of memory your flash drive:")
+        const capacity = Math.floor((memory * 1024) / 820);
+        alert(`Your flash drive can accommodate ${capacity} files with a size of 820 mb `)
+        let money = [prompt(" 8.How much money is in your wallet?"), prompt("8.How much does a chocolate bar cost?")];
+        const chocolate = Math.floor(money[0] / money[1])
+        const change = money[0] - (chocolate * money[1]);
+        alert(`You can buy ${chocolate} chocolate and your change will be equal ${change} `)
+        let num = prompt("9. Enter a three-digit number:")
+        const fnum = Math.floor(num / 100)
+        const lnum = num % 10
+        const snum = Math.floor((num % 100) / 10);
+        alert("Another number: " + lnum + snum + fnum)
+        let integer = prompt("10. Enter a integer number:")
+        const ans = integer % 2 === 0 ? "even" : "odd";
+        alert(ans)
+    </script>
+</body>
+
+</html>
